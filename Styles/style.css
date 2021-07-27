@@ -1,0 +1,62 @@
+.nav-bar{
+    border-bottom: 1px solid #c7c2c2e3;
+}
+.list-items li{
+    border-bottom: 1px solid #e4e4e4cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+a{
+    color: #131313e0;
+    text-decoration: none;
+}
+
+.banner{
+    background: #e5e1e161;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+.itemsection{
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-download{
+    background: #e5e1e161;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c7c2c2e3;
+}
+.appbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ulist{
+    margin: 0;
+    padding: 0;
+}
+
+.ulist li{
+    display: block;
+}
+
+.brands{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c7c2c2e3;
+}
+.footerend{
+    padding-top: 20px;
+    border-bottom: 1px solid #c7c2c2e3;
+}

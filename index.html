@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Developed By Buvaneshkumar R -->
+<!-- Full Stack Developer -->
+<!-- Improving the Bootstrap classes -->
+<!-- Created Using HTML, CSS, Bootstrap -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CDN for Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Link For our Custom Style Sheet -->
+    <link rel="stylesheet" href="./Styles/style.css ">
+    <title>Ecommerce Website</title>
+</head>
+
+<body>
+    <!-- Nav Bar at the top - first navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img
+                    src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Products</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="width: 300px;">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <!-- We use font awesome icons for user profile icon and cart icon -->
+                <ul class="navbar-nav  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active .px-2" aria-current="page" href="#"><i
+                                class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active .px-2" href="#"><i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Second Navbar for the products -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Super Market</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Partnership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Baby & Toys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Fitness Sport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Clothing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Furnitures</a>
+                    </li>
+                    <!-- Usage of dropdown using Bootstrap -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="true">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Food and Drink</a></li>
+                            <li><a class="dropdown-item" href="#">Home Interior</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                            <li><a class="dropdown-item" href="#">Category 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- This will be Banner Divided into two columns as col-md-3 and 9 -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <!-- this will be card for products division -->
+                <div class="col-md-3">
+                    <nav class="card">
+                        <ul class="list-items" style="    margin: 0;
+                        padding: 0;">
+                            <li><a href="#">Best Clothes</a></li>
+                            <li><a href="#">Automobiles</a></li>
+                            <li><a href="#">Home Interior</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Technologies</a></li>
+                            <li><a href="#">Digital Goods</a></li>
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                                    More Items
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Food and Drink</a></li>
+                                    <li><a class="dropdown-item" href="#">Home Interior</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Category 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- This will be banner Image -->
+                <div class="col-md-9"><img
+                        src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/2.jpg"
+                        alt="banner-image" style="width: 100%;
+                        border-radius: 2.5px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Here Will be the Products Section -->
+    <div class="itemsection">
+        <div class="container">
+            <div class="top">
+                <h3>Popular Products</h3>
+                <button class="btn btn-primary">See All</button>
+            </div>
+            <br>
+            <div class="row">
+                <!-- Products can be displayed using cards -->
+                <div class="col-md-3">
+                    <div class="card" style="margin: 2px;
+                    width: 100%;">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">T-Shirt</a>
+                            <hr>
+                            <span>Price: <b>$150</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="margin: 2px;
+                    width: 100%;">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/2.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">Jerkin</a>
+                            <hr>
+                            <span>Price: <b>$280</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="margin: 2px;
+                    width: 100%;">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/3.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">Trouser</a>
+                            <hr>
+                            <span>Price: <b>$56</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="margin: 2px;
+                    width: 100%;">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/4.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">Bag</a>
+                            <hr>
+                            <span>Price: <b>$179</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="margin: 2px;
+                    width: 100%;">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/5.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">Laptop Cover</a>
+                            <hr>
+                            <span>Price: <b>$170</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="margin: 2px;
+                    width: 100%;">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/6.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">Sofa</a>
+                            <hr>
+                            <span>Price: <b>$280</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="margin: 2px;
+                    width: 100%;">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">Watch</a>
+                            <hr>
+                            <span>Price: <b>$56</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="margin: 2px;
+                    width: 100%;">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/8.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">HeadPhone</a>
+                            <hr>
+                            <span>Price: <b>$179</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- App Ad for downloading -->
+    <div class="app-download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                        <h2>Download the App Now!</h2>
+                        <span>Get an amazing app makes a life easy...</span>
+                </div>
+                <div class="col-md-6 appbutton">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/misc/appstore.png" style="height: 40px;" alt="">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/misc/appstore.png" style="height: 40px;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brands Available in the store and help the customers -->
+    <div class="brands">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h6>Brands</h6>
+                    <ul class="ulist">
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">Reebok</a></li>
+                        <li><a href="#">Nike</a></li>
+                    </ul>
+                </div>
+                <!-- this will be company details column -->
+                <div class="col-md">
+                    <h6>Company</h6>
+                    <ul class="ulist">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Rules and Terms</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <!-- this will be help div -->
+                <div class="col-md">
+                    <h6>Help</h6>
+                    <ul class="ulist">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Open Dispute</a></li>
+                    </ul>
+                </div>
+                <!-- This will be account related imformation column -->
+                <div class="col-md">
+                    <h6>Account</h6>
+                    <ul class="ulist">
+                        <li><a href="#">User Login</a></li>
+                        <li><a href="#">User Register</a></li>
+                        <li><a href="#">Account Setting</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+                <!-- This will be company social weblinks column -->
+                <div class="col-md">
+                    <h6>Social</h6>
+                    <ul class="ulist">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer for the app contains store address and Mobile Number -->
+    <div class="footer-bottom footerend">
+        <div class="container">
+            <div class="row">
+                <!-- copyright Information -->
+                <div class="col-md-2">
+                    <p class="text-muted">© Company name</p>
+                </div>
+                <!-- company details -->
+                <div class="col-md-8 text-md-center">
+                    <span class="px-2">info@pixsellz.io</span>
+                    <span class="px-2">+879-332-9375</span>
+                    <span class="px-2">Street name 123, Avanue abc</span>
+                </div>
+                <!-- supported apps -->
+                <div class="col-md-2 text-md-right text-muted">
+                    <i class="fab fa-lg fa-cc-visa"></i>
+                    <i class="fab fa-lg fa-cc-paypal"></i>
+                    <i class="fab fa-lg fa-cc-mastercard"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
